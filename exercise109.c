@@ -1,4 +1,4 @@
-/* Exercise 1-8: Write a program to copy its input to its output, replacing
+/* Exercise 1-9: Write a program to copy its input to its output, replacing
  * each string of one of more blanks with a single blank. */
 
 #include <stdint.h>
