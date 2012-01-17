@@ -6,6 +6,6 @@ use Test::More tests => 2;
 
 open(SOLUTION, "exercise101 |") or die;
 chomp(my $solution_output = join("", <SOLUTION>));
-is($solution_output, "Hello, World!",
-    "Solution output is \"Hello, World!\".");
+like($solution_output, qr/Hello.*world!/i,
+    "Solution output is \"Hello, world!\" or similar.");
 is($?, 0, "Solution exits without errors.");
