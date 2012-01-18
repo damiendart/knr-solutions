@@ -22,8 +22,7 @@ int main(void)
         break;
     }
   }
-  printf("Number of blanks: %d\n", blank_count);
-  printf("Number of tabs: %d\n", tab_count);
-  printf("Number of newlines: %d\n", newline_count);
+  printf("Input contains %d blank(s), %d tab(s), and %d newline(s).\n",
+      blank_count, tab_count, newline_count);
   return EXIT_SUCCESS;
 }
