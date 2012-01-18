@@ -10,7 +10,7 @@
 
 #define MAX_WORD_LENGTH 10
 
-int main(int argc, char **argv)
+int main(void)
 {
   uint32_t word_length_frequencies[MAX_WORD_LENGTH + 1] = { 0 };
   uint32_t largest_frequency = 0;

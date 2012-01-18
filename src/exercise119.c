@@ -9,7 +9,7 @@
 
 uint32_t reverse(char *s);
 
-int main(int argc, char **argv)
+int main(void)
 {
   char *buffer = NULL;
   uint32_t buffer_length = 0;

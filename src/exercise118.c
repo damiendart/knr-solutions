@@ -12,7 +12,7 @@ struct buffer_node {
 
 void deleteBuffer(struct buffer_node **buffer_head);
 
-int main(int argc, char **argv)
+int main(void)
 {
   int32_t character = 0;
   int32_t previous_character = 0;

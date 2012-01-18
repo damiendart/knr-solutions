@@ -8,7 +8,7 @@
 
 #define LINE_LIMIT 80
 
-int main(int argc, char **argv)
+int main(void)
 {
   uint32_t current_line_length = 0;
   int32_t buffer[LINE_LIMIT] = { 0 };

@@ -6,7 +6,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-int main(int argc, char **argv)
+int main(void)
 {
   uint32_t character_frequencies[CHAR_MAX] = { 0 };
   int32_t character;

@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char **argv)
+int main(void)
 {
   printf("\\a produces an audible or visual alert: \a\n");
   printf("\\f produces a formfeed: \f\n");

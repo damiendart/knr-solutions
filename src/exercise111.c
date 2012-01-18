@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char **argv)
+int main(void)
 {
   /* This is such a cheat. */
   printf("Types of input that could be used to test a word counting program:\n");

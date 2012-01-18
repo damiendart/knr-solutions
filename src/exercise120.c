@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char **argv)
+int main(void)
 {
   int32_t character = 0;
   uint32_t line_length = 0;

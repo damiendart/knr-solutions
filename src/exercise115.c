@@ -9,7 +9,7 @@ float farenheitToCelsius(float farenheit)
   return (5.0 / 9.0) * (farenheit - 32.0);
 }
 
-int main(int argc, char **argv)
+int main(void)
 {
   printf("F\tC\n=============\n");
   float i;
