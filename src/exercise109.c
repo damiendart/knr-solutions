@@ -7,7 +7,8 @@
 
 int main(void)
 {
-  int16_t character, previous_character;
+  int16_t character = 0;
+  int16_t previous_character = 0;
   while ((character = getchar()) != EOF) {
     if ((previous_character == ' ') && (character == ' ')) {
       continue;

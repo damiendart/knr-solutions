@@ -7,8 +7,8 @@
 
 int main(void)
 {
-  int16_t character;
-  bool in_whitespace;
+  int16_t character = 0;
+  bool in_whitespace = false;
   while ((character = getchar()) != EOF) {
     if ((character == ' ') || (character == '\t')) {
       if (in_whitespace == false) {

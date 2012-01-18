@@ -19,7 +19,7 @@ int main(void)
       line_length += spaces_to_add;
     } else {
       putchar(character);
-      line_length = (character != '\n') ? ++line_length : 0;
+      line_length = (character != '\n') ? line_length + 1 : 0;
     }
   }
   return EXIT_SUCCESS;

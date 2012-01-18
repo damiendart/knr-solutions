@@ -12,7 +12,7 @@ int getline(char line[], int maxline);
 void copy(char to[], char from[]);
 
 /* print longest input line */
-main()
+int main(void) /* Line edited to keep anally-retentive GCC happy. */
 {
     int len;            /* current line length */
     int max;            /* maximum length seen so far */
@@ -48,7 +48,7 @@ main()
 /* getline:  read a line into s, return length */
 int getline(char s[], int lim)
 {
-    int c, i;
+    int c = 0, i; /* Line edited to keep anally-retentive GCC happy. */
 
     for (i=0; i<lim-1 && (c=getchar())!=EOF && c!='\n'; ++i)
         s[i] = c;
