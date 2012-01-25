@@ -12,7 +12,7 @@ chomp(my $expected_output = join("", <main::DATA>));
 $expected_output =~ s/\\([nt])/"qq|\\$1|"/gee;
 eq_or_diff($solution_output, $expected_output,
     "Solution output matches expected output.");
-is($?, 0, "Solution exits without errors.");
+is($? >> 8, 0, "Solution exits without errors.");
 
 __END__
 C\tF

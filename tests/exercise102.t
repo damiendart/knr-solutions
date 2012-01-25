@@ -11,4 +11,4 @@ like($solution_output, qr/\a/, "Solution output contains \"\\a\".");
 like($solution_output, qr/\f/, "Solution output contains \"\\f\".");
 like($solution_output, qr/\r/, "Solution output contains \"\\r\".");
 like($solution_output, qr/\v/, "Solution output contains \"\\v\".");
-is($?, 0, "Solution exits without errors.");
+is($? >> 8, 0, "Solution exits without errors.");
