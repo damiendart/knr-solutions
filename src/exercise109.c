@@ -14,7 +14,7 @@ int main(void)
       continue;
     } else {
       putchar(character);
-    previous_character = character;
+      previous_character = character;
     }
   }
   return EXIT_SUCCESS;

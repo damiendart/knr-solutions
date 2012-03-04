@@ -7,9 +7,9 @@ RM = rm -rf
 SOURCE_FOLDER = src
 
 all: $(addprefix $(BIN_FOLDER)/, $(BIN)) prepare
-$(BIN_FOLDER)/% : $(SOURCE_FOLDER)/%.c prepare
+$(BIN_FOLDER)/%: $(SOURCE_FOLDER)/%.c prepare
 	$(CC) $(CFLAGS) $< -o $@
-.PHONY : clean
+.PHONY: clean
 clean:
 	$(RM) $(BIN_FOLDER)
 prepare:
