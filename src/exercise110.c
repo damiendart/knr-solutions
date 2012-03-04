@@ -1,6 +1,10 @@
-/* Exercise 1-10: Write a program to copy its input to its output, replacing
- * each tab by \t, each backspace by \b, and each backslash by \\. This makes
- * tabs and backspaces visible in an unambiguous way. */
+/*
+ * A solution to Exercise 1-10 in The C Programming Language (Second Edition).
+ *
+ * This file was written by Damien Dart <damiendart@pobox.com>. This is free
+ * and unencumbered software released into the public domain. For more
+ * information, please refer to the accompanying "UNLICENCE" file.
+ */
 
 #include <stdint.h>
 #include <stdio.h>

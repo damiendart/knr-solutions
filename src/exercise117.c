@@ -1,5 +1,10 @@
-/* Exercise 1-17: Write a program to print all input lines that are longer
- * than 80 characters. */
+/*
+ * A solution to Exercise 1-17 in The C Programming Language (Second Edition).
+ *
+ * This file was written by Damien Dart <damiendart@pobox.com>. This is free
+ * and unencumbered software released into the public domain. For more
+ * information, please refer to the accompanying "UNLICENCE" file.
+ */
 
 #include <stdbool.h>
 #include <stdint.h>

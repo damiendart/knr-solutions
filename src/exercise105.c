@@ -1,5 +1,10 @@
-/* Exercise 1-5: Modify the temperature conversion program to print the table
- * in reverse order, that is, from 300 degrees to 0. */
+/*
+ * A solution to Exercise 1-5 in The C Programming Language (Second Edition).
+ *
+ * This file was written by Damien Dart <damiendart@pobox.com>. This is free
+ * and unencumbered software released into the public domain. For more
+ * information, please refer to the accompanying "UNLICENCE" file.
+ */
 
 #include <stdio.h>
 #include <stdlib.h>

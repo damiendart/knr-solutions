@@ -1,4 +1,10 @@
-/* Exercise 1-12: Write a program that prints its input one word per line. */
+/*
+ * A solution to Exercise 1-12 in The C Programming Language (Second Edition).
+ *
+ * This file was written by Damien Dart <damiendart@pobox.com>. This is free
+ * and unencumbered software released into the public domain. For more
+ * information, please refer to the accompanying "UNLICENCE" file.
+ */
 
 #include <stdbool.h>
 #include <stdint.h>

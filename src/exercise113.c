@@ -1,6 +1,10 @@
-/* Exercise 1-13: Write a program to print a histogram of the lengths of words
- * in its input. It is easy to draw the histogram with the bars horizontal; a
- * vertical orientation is more challenging. */
+/*
+ * A solution to Exercise 1-13 in The C Programming Language (Second Edition).
+ *
+ * This file was written by Damien Dart <damiendart@pobox.com>. This is free
+ * and unencumbered software released into the public domain. For more
+ * information, please refer to the accompanying "UNLICENCE" file.
+ */
 
 #include <ctype.h>
 #include <stdbool.h>

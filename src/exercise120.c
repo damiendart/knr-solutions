@@ -1,7 +1,10 @@
-/* Exercise 1-20: Write a program "detab" that replaces tabs in the input with
- * the proper number of blanks to space to the next tab stop. Assume a fixed
- * set of tab stops, say every "n" columns. Should "n" be a variable or a
- * symbolic parameter? */
+/*
+ * A solution to Exercise 1-20 in The C Programming Language (Second Edition).
+ *
+ * This file was written by Damien Dart <damiendart@pobox.com>. This is free
+ * and unencumbered software released into the public domain. For more
+ * information, please refer to the accompanying "UNLICENCE" file.
+ */
 
 #include <stdint.h>
 #include <stdio.h>

@@ -1,5 +1,10 @@
-/* Exercise 1-9: Write a program to copy its input to its output, replacing
- * each string of one of more blanks with a single blank. */
+/*
+ * A solution to Exercise 1-9 in The C Programming Language (Second Edition).
+ *
+ * This file was written by Damien Dart <damiendart@pobox.com>. This is free
+ * and unencumbered software released into the public domain. For more
+ * information, please refer to the accompanying "UNLICENCE" file.
+ */
 
 #include <stdint.h>
 #include <stdio.h>

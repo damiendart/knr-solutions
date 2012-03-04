@@ -1,5 +1,10 @@
-/* Exercise 1-18: Write a program to remove trailing blanks and tabs from each
- * line of input, and to delete entirely blank lines. */
+/*
+ * A solution to Exercise 1-18 in The C Programming Language (Second Edition).
+ *
+ * This file was written by Damien Dart <damiendart@pobox.com>. This is free
+ * and unencumbered software released into the public domain. For more
+ * information, please refer to the accompanying "UNLICENCE" file.
+ */
 
 #include <stdint.h>
 #include <stdio.h>

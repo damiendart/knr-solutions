@@ -1,5 +1,10 @@
-/* Exercise 1-3: Modify the temperature conversion program to print a heading
- * above the table. */
+/*
+ * A solution to Exercise 1-3 in The C Programming Language (Second Edition).
+ *
+ * This file was written by Damien Dart <damiendart@pobox.com>. This is free
+ * and unencumbered software released into the public domain. For more
+ * information, please refer to the accompanying "UNLICENCE" file.
+ */
 
 #include <stdio.h>
 #include <stdlib.h>

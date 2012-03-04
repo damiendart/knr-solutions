@@ -1,6 +1,10 @@
-/* Exercise 1-19: Write a function "reverse(s)" that reverses the character
- * string "s". Use it to write a program that reverses its input a line at a
- * time. */
+/*
+ * A solution to Exercise 1-19 in The C Programming Language (Second Edition).
+ *
+ * This file was written by Damien Dart <damiendart@pobox.com>. This is free
+ * and unencumbered software released into the public domain. For more
+ * information, please refer to the accompanying "UNLICENCE" file.
+ */
 
 #include <stdbool.h>
 #include <stdint.h>

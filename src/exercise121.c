@@ -1,7 +1,10 @@
-/* Exercise 1-21: Write a program "entab" that replaces strings of blanks by
- * the minimum number of tabs and blanks to achieve the same spacing. Use the
- * same tab stops as for "detab". When either a tab or a single blank would
- * suffice to reach a tab stop, which should be given preference? */
+/*
+ * A solution to Exercise 1-21 in The C Programming Language (Second Edition).
+ *
+ * This file was written by Damien Dart <damiendart@pobox.com>. This is free
+ * and unencumbered software released into the public domain. For more
+ * information, please refer to the accompanying "UNLICENCE" file.
+ */
 
 #include <stdint.h>
 #include <stdio.h>
