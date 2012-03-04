@@ -16,7 +16,7 @@ int main(void)
   int16_t character = 0;
   bool in_whitespace = false;
   while ((character = getchar()) != EOF) {
-    if ((character == ' ') || (character == '\t')) {
+    if ((character == ' ') || (character == '\t' || character == '\n')) {
       if (in_whitespace == false) {
         putchar('\n');
         in_whitespace = true;
