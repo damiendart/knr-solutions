@@ -1,5 +1,5 @@
 /*
- * A solution to Exercise 1-1 in The C Programming Language (Second Edition).
+ * A solution to Exercise 2-1 in The C Programming Language (Second Edition).
  *
  * This file was written by Damien Dart <damiendart@pobox.com>. This is free
  * and unencumbered software released into the public domain. For more
