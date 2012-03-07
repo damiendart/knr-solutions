@@ -11,9 +11,9 @@
 
 int main(void)
 {
-  printf("\\a produces an audible or visual alert: \a\n");
-  printf("\\f produces a formfeed: \f\n");
-  printf("\\r produces a carriage return: \rlololol\n");
-  printf("\\v produces a vertical tab: \t\n");
+  puts("\\a produces an audible or visual alert: \a");
+  puts("\\f produces a formfeed: \f");
+  puts("\\r produces a carriage return: \rlololol");
+  puts("\\v produces a vertical tab: \t");
   return EXIT_SUCCESS;
 }
