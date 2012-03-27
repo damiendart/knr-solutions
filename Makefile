@@ -1,16 +1,12 @@
-CC = gcc
-CFLAGS = -g -O2 -pendantic -std=c99 -Wall -Wextra
-BIN = $(patsubst $(SOURCE_FOLDER)/%.c, %, $(wildcard $(SOURCE_FOLDER)/*.c))
-BIN_FOLDER = bin
-MKDIR = mkdir -p
-RM = rm -rf
-SOURCE_FOLDER = src
+# This file was written by Damien Dart, <damiendart@pobox.com>. This is free
+# and unencumbered software released into the public domain. For more
+# information, please refer to the accompanying "UNLICENCE" file.
 
-all: $(addprefix $(BIN_FOLDER)/, $(BIN)) prepare
-$(BIN_FOLDER)/%: $(SOURCE_FOLDER)/%.c prepare
-	$(CC) $(CFLAGS) $< -o $@
-.PHONY: clean
+SOURCE_FOLDER = src/
+
+%: $(SOURCE_FOLDER)%.c
+	gcc -O2 -pendantic -std=c99 -Wall -Wextra -Werror $< -o $@
+.PHONY: all clean
+all: $(patsubst $(SOURCE_FOLDER)%.c, %, $(wildcard $(SOURCE_FOLDER)*.c))
 clean:
-	$(RM) $(BIN_FOLDER)
-prepare:
-	@$(MKDIR) $(BIN_FOLDER)
+	rm -rf exercise* 
