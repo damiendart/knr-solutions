@@ -11,9 +11,9 @@
 
 int main(void)
 {
-  puts("\\a produces an audible or visual alert: \a");
-  puts("\\f produces a formfeed: \f");
-  puts("\\r produces a carriage return: \rlololol");
-  puts("\\v produces a vertical tab: \t");
+  puts("An audible or visual alert: \a");
+  puts("A form feed: \f");
+  puts("A carriage return: \r");
+  puts("A vertical tab: \v");
   return EXIT_SUCCESS;
 }
