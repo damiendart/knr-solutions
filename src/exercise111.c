@@ -12,12 +12,12 @@
 int main(void)
 {
   /* This is such a cheat. */
-  printf("Types of input that could be used to test a word counting program:\n");
-  printf(" - Input with no characters,\n");
-  printf(" - input with just one massive word that's MAX_INT letters long,\n");
-  printf(" - input with more than MAX_INT words,\n");
-  printf(" - input with varying whitespace to delimit words,\n");
-  printf(" - binary input (such as an image file),\n");
-  printf(" - and Unicode input.\n");
+  puts("Types of input that could be used to test a word counting program:");
+  puts(" - Input with no characters,");
+  puts(" - input with just one massive word that's MAX_INT letters long,");
+  puts(" - input with more than MAX_INT words,");
+  puts(" - input with varying whitespace to delimit words,");
+  puts(" - binary input (such as an image file), and");
+  puts(" - Unicode input.");
   return EXIT_SUCCESS;
 }

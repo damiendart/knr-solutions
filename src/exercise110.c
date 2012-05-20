@@ -12,7 +12,7 @@
 
 int main(void)
 {
-  int16_t character;
+  int16_t character = 0;
   while ((character = getchar()) != EOF) {
     switch (character) {
       case '\t':
