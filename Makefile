@@ -5,8 +5,9 @@
 PATH := $(shell pwd):$(PATH)
 SOURCE_FOLDER = src/
 
+# FIXME: Not all exercises need the math library.
 %: $(SOURCE_FOLDER)%.c
-	gcc -O2 -pendantic -std=c99 -Wall -Wextra -Werror $< -o $@
+	gcc -O2 -pedantic -std=c99 -Wall -Wextra -Werror $< -o $@ -lm
 .PHONY: all clean test
 all: $(patsubst $(SOURCE_FOLDER)%.c, %, $(wildcard $(SOURCE_FOLDER)*.c))
 clean:
