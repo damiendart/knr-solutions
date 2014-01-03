@@ -6,14 +6,13 @@
  * information, please refer to the accompanying "UNLICENCE" file.
  */
 
-#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 int main(void)
 {
-  uint32_t blank_count, tab_count, newline_count;
-  int16_t character = 0;
+  unsigned int blank_count, tab_count, newline_count;
+  int character = 0;
   blank_count = tab_count = newline_count = 0;
   while ((character = getchar()) != EOF) {
     switch (character) {
