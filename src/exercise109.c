@@ -6,18 +6,15 @@
  * information, please refer to the accompanying "UNLICENCE" file.
  */
 
-#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 int main(void)
 {
-  int16_t character = 0;
-  int16_t previous_character = 0;
+  int character = 0;
+  int previous_character = 0;
   while ((character = getchar()) != EOF) {
-    if ((previous_character == ' ') && (character == ' ')) {
-      continue;
-    } else {
+    if (!((previous_character == ' ') && (character == ' '))) {
       putchar(character);
       previous_character = character;
     }
