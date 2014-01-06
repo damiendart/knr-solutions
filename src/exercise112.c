@@ -6,24 +6,22 @@
  * information, please refer to the accompanying "UNLICENCE" file.
  */
 
-#include <stdbool.h>
-#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 int main(void)
 {
-  int16_t character = 0;
-  bool in_whitespace = false;
+  int character = 0;
+  int in_whitespace = 0;
   while ((character = getchar()) != EOF) {
     if ((character == ' ') || (character == '\t' || character == '\n')) {
-      if (in_whitespace == false) {
+      if (in_whitespace == 0) {
         putchar('\n');
-        in_whitespace = true;
+        in_whitespace = 1;
       }
     } else {
       putchar(character);
-      in_whitespace = false;
+      in_whitespace = 0;
     }
   }
   return EXIT_SUCCESS;
