@@ -12,7 +12,9 @@ use IPC::Open2;
 use Test::Differences;
 use Test::More tests => 2;
 
-my $process_id = open2(*SOLUTION, *INPUT, "exercise112"); 
+my $process_id;
+eval { $process_id = open2(*SOLUTION, *INPUT, "exercise112"); };
+BAIL_OUT("Unable to run solution.") if ($@ =~ /^open2:/);
 my $test_input = "Derp trust fund farm-to-table vegan, biodiesel american " .
     "apparel etsy retro squid cardigan. Squid art party etsy tumblr " .
     "beard bicycle rights.";

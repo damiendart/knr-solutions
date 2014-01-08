@@ -10,7 +10,7 @@ use strict;
 
 use Test::More tests => 2;
 
-open(SOLUTION, "exercise107 |") or die;
+open(SOLUTION, "exercise107 |") or BAIL_OUT("Unable to run solution.");
 chomp(my $solution_output = join("", <SOLUTION>));
 like($solution_output, qr/EOF = -?[0-9]+/i,
     "Solution output is \"EOF = X\" where X is an integer.");

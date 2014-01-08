@@ -10,7 +10,7 @@ use strict;
 
 use Test::More tests => 2;
 
-open(SOLUTION, "exercise111 |");
+open(SOLUTION, "exercise111 |") or BAIL_OUT("Unable to run solution.");
 chomp(my $solution_output = join("", <SOLUTION>));
 # FIXME: Worst. Test. Ever.
 ok($solution_output, "Solution outputs something.");

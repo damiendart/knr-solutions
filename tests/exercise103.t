@@ -11,9 +11,9 @@ use strict;
 use Test::Differences;
 use Test::More tests => 2;
 
-open(SOLUTION, "exercise103 |") or die;
+open(SOLUTION, "exercise103 |") or BAIL_OUT("Unable to run solution.");
 chomp(my $solution_output = join("", <SOLUTION>));
-chomp(my $expected_output = join("", <main::DATA>));
+chomp(my $expected_output = join("", <DATA>));
 # The escape sequences need to be interpreted.
 $expected_output =~ s/\\([nt])/"qq|\\$1|"/gee;
 eq_or_diff($solution_output, $expected_output,

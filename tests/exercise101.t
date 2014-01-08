@@ -10,7 +10,7 @@ use strict;
 
 use Test::More tests => 2;
 
-open(SOLUTION, "exercise101 |") or die;
+open(SOLUTION, "exercise101 |") or BAIL_OUT("Unable to run solution.");
 chomp(my $solution_output = join("", <SOLUTION>));
 like($solution_output, qr/Hello.*world!/i,
     "Solution output is \"Hello, world!\" or similar.");

@@ -10,7 +10,7 @@ use strict;
 
 use Test::More tests => 5;
 
-open(SOLUTION, "exercise102 |") or die;
+open(SOLUTION, "exercise102 |") or BAIL_OUT("Unable to run solution.");
 chomp(my $solution_output = join("", <SOLUTION>));
 # TODO: Check for all escape sequences.
 like($solution_output, qr/\a/, "Solution output contains \"\\a\".");
