@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/perl -w
 
 # Tests for Exercise 1-6 in The C Programming Language (Second Edition).
 #
@@ -6,22 +6,24 @@
 # and unencumbered software released into the public domain. For more
 # information, please refer to the accompanying "UNLICENCE" file.
 
-function testForEquality() {
-  # TODO: Add parameter check.
-  local TEST_RESULT="not ok"
-  [ "$1" == "$2" ] && TEST_RESULT="ok"
-  echo "$TEST_RESULT $3 - $4"
-  [ "$1" == "$2" ] || echo "# Test $3 failed: got '$1', expected '$2'."
-}
+use strict;
 
-echo "1..4"
-testForEquality "$(echo -n | exercise106)" "0" \
-    1 "Solution output is \"0\" when input is EOF."
-echo -n | exercise106 >/dev/null
-testForEquality "$?" "0" \
-    2 "Solution exits without errors when input is EOF."
-testForEquality "$(echo -n \"a\" | exercise106)" "1" \
-    3 "Solution output is \"1\" when input is not EOF."
-echo -n "a" | exercise106 >/dev/null
-testForEquality "$?" "0" \
-    4 "Solution exits without errors when input is not EOF."
+use IPC::Open2;
+use Test::More tests => 4;
+
+my $process_id;
+eval { $process_id = open2(*SOLUTION, *INPUT, "exercise106"); };
+BAIL_OUT("Unable to run solution \"exercise106\".") if ($@ =~ /^open2:/);
+close INPUT;
+chomp(my $solution_output = join("", <SOLUTION>));
+is($solution_output, 0, "Solution output is \"0\" when input is EOF.");
+waitpid($process_id, 0);
+is($? >> 8, 0, "Solution exits without errors when input is EOF.");
+eval { $process_id = open2(*SOLUTION, *INPUT, "exercise106"); };
+BAIL_OUT("Unable to run solution \"exercise106\".") if ($@ =~ /^open2:/);
+print INPUT "a";
+close INPUT;
+chomp($solution_output = join("", <SOLUTION>));
+is($solution_output, 1, "Solution output is \"1\" when input is not EOF.");
+waitpid($process_id, 0);
+is($? >> 8, 0, "Solution exits without errors when input is not EOF.");
