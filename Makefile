@@ -2,13 +2,12 @@
 # and unencumbered software released into the public domain. For more
 # information, please refer to the accompanying "UNLICENCE" file.
 
-CFLAGS = -O2 -pedantic -std=c99 -Wall -Wextra -Werror
 PATH := $(shell pwd):$(PATH)
 SOURCE_FOLDER = src/
 
-%: $(SOURCE_FOLDER)%.c
-	$(CC) $(CFLAGS) $< -o $@ $(LDFLAGS)
 .PHONY: all clean test
+%: $(SOURCE_FOLDER)%.c
+	$(CC) -pedantic -std=c99 -Wall -Wextra -Werror $(CFLAGS) $< -o $@ $(LDFLAGS)
 all: $(patsubst $(SOURCE_FOLDER)%.c, %, $(wildcard $(SOURCE_FOLDER)*.c))
 clean:
 	rm -rf exercise* 
