@@ -1,5 +1,8 @@
 knr-solutions
 =============
 
-Yet another incomplete set of solutions to The C Programming Language (Second
-Edition). This one has shitty tests! 
+Yet another incomplete set of [Category-3 compliant][1] solutions to
+Brian Kernighan and Dennis Ritchie's _The C Programming Language (Second
+Edition)_. This one has shitty tests! 
+
+[1]: <http://clc-wiki.net/wiki/K%26R2_solutions:Ancillary:Category_numbers>
